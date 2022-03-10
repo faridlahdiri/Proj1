@@ -1,0 +1,14 @@
+deployment:
+  image: "gcr.io/google-samples/hello-app"
+  tag: "2.0"
+
+service:
+  type: "LoadBalancer"
+  targetport: "8080"
+  port: "8080"
+  nodeport: "30888"
+
+loadbalancer:
+  addresses: "10.0.0.250-10.0.0.254" 
+
+  
