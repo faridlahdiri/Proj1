@@ -1,0 +1,4 @@
+This deployment uses a MetalLB pod. For it to work, the LB external IP address need to be configued.
+
+To configure the external IP address, Edit the pnsi-app/values.yaml file and replace the "X" by the desired IP in the loadbalancer.addresses section
+
