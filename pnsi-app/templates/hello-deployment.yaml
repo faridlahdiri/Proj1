@@ -15,6 +15,10 @@ spec:
       labels:
         app: hello-app
     spec:
+      securityContext:
+        runAsNonRoot: yes
+        runAsUser: 1001
+        runAsGroup: 1001
       containers:
       - name: hello
         image: {{ .Values.deployment.image }}:{{ .Values.deployment.tag }} 
